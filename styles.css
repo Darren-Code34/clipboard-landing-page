@@ -73,10 +73,12 @@ p{
 
 .ios-btn{
     background-color: hsl(171, 66%, 44%);
+    box-shadow: 1px 3px hsl(171, 65%, 37%);
 }
 
 .mac-btn{
     background-color: hsl(233, 100%, 69%);
+    box-shadow: 1px 3px hsl(233, 99%, 64%);
 }
 
 .section{
@@ -154,6 +156,217 @@ ul{
 }
 
 .attribution{
+    background-color: hsl(204, 7%, 87%);
     margin-bottom: 0;
+}
+
+/*Responsive design*/
+
+@media only screen and (min-width:376px){
+    .header{
+        background-image: url(./images/bg-header-desktop.png);
+    }
+}
+
+@media only screen and (min-width:720px){
+    
+    body{
+        font-size: 17px;
+    }
+
+    .header{
+        height: 250px;
+    }
+
+    .big-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90px;
+        position: absolute;
+        top: 15%;
+        left: 45%;
+    
+    }
+
+    .btn-download{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn{
+        margin-right: 15px;
+    }
+
+    .second-paragraph{
+        margin-bottom: 60px;
+    }
+
+    .computer{
+        float: left;
+        width: 50%;
+        margin-top: 20px;
+        margin-right: 35px;
+        position: relative;
+        top: -40px;
+    }
+
+    .snippets-point{
+        position: relative;
+        bottom: -20px;
+    }
+
+    .search,.sync,.history{
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .search{
+        margin-top: 40px;
+    }
+
+    .third-paragraph,.fourth-paragraph,.fith-paragraph{
+        font-size: 13px;
+        text-align: left;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+
+    .section2{
+        margin-bottom: 100px;
+    }
+
+    .devices{
+        width: 70%;
+    }
+
+    .workflow-group{
+        display: flex;
+        font-size: 11px;
+        justify-content: space-between;
+    }
+
+    .workflow-group h3{
+        font-size: 14px;
+    }
+
+    .blacklist-group,.text-group{
+        margin-right: 20px;
+    }
+
+    .blacklist,.text,.preview{
+        height: 30px;
+    }
+
+    .partnership{
+        flex-direction: row;
+        margin-bottom: 150px;
+    
+    }
+
+    .google,.ibm,.microsoft,.hp,.vector{
+        width: 10%;
+        height: auto;
+        margin-bottom: 0;
+        margin-right: 30px;
+        display: block;
+
+    }
+
+    .vector{
+        margin-right: 0;
+    }
+
+    .eleventh-paragraph{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    
+    .small-logo{
+        width: 35px;
+        height: 35px;
+        margin-top: 0;
+        margin-left: 60px;
+        margin-right: 50px;
+    }
+    
+    li{
+        font-size: 13px;
+        margin-right: 35px;
+    }
+    
+    ul{
+        display: flex;
+        text-align: left;
+    }
+    
+    .social{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-icon{
+        margin-right: 25px;
+    }
+
+    .instagram{
+        margin-right: 50px;
+    }
+
+}
+
+@media only screen and (min-width:1100px){
+    body{
+        font-size: 18px;
+    }
+    .computer{
+        float: left;
+        width: 40%;
+        margin-right: 60px;
+        position: relative;
+        top: -40px;
+    }
+
+    .snippets-point{
+        position: relative;
+        bottom: -40px;
+    }
+
+    .devices{
+        width: 60%;
+    }
+
+    .workflow-group{
+        font-size: 14px;
+    }
+
+    .workflow-group h3{
+        font-size: 15px;
+    }
+
+    .blacklist-group,.text-group{
+        margin-right: 20px;
+    }
+
+    .blacklist,.text,.preview{
+        width: 40px;
+        height: 35px;
+    }
+
+    .eleventh-paragraph{
+        width: 55%;
+    }
+
 }
 
